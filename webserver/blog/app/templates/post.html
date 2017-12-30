@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Create Post</h1>
+
+<form action="" method="post" name="create_post">
+	{{ form.hidden_tag() }}
+	<p>
+		<span>Tell us something cool!</span>
+	</p>
+	<br>	
+	{{ form.body(cols="140", rows="20") }}
+	<br>
+	<p><input type="submit" value="Post!"></p>
+</form>
+{% endblock %}

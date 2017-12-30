@@ -1,0 +1,2 @@
+CREATE TABLE users (id SERIAL PRIMARY KEY, username VARCHAR(64), passwd VARCHAR(120));
+CREATE TABLE posts (id SERIAL PRIMARY KEY, body VARCHAR(140), timestamp TIMESTAMP, user_id INTEGER REFERENCES users(id));
